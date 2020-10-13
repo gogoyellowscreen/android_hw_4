@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">hw4</string>
+    <string name="cherepovets">cherepovets</string>
+    <string name="client_id">client_id</string>
+    <string name="empty" />
+    <string name="id">KzLEMThXnRRrrorXGnDYiOy8W0Hx3hj5YzEHWD9RApw</string>
+    <string name="url_query">https://api.unsplash.com/photos?query=</string>
+    <string name="action">download</string>
+    <string name="no_description">no description</string>
+    <string name="defaultId">0</string>
+    <string name="defaultLink">https://bit.ly/2B31CSs</string>
+    <string name="mode">regular</string>
+    <string name="type">type</string>
+    <string name="ref">ref</string>
+    <string name="id_id">id</string>
+    <string name="result">result</string>
+    <string name="error_connect">Error: cannot connect to internet</string>
+    <string name="list">list</string>
+    <string name="image_list">image_list</string>
+    <string name="array">array</string>
+    <string name="urls">urls</string>
+    <string name="description">description</string>
+    <string name="alt_description">alt_description</string>
+    <string name="nul1">null</string>
+</resources>
