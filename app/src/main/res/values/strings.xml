@@ -22,4 +22,5 @@
     <string name="description">description</string>
     <string name="alt_description">alt_description</string>
     <string name="nul1">null</string>
+    <string name="error_download_im">error man</string>
 </resources>

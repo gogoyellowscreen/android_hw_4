@@ -68,6 +68,11 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
     }
 
+    override fun onStop() {
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(imageReceiver)
+        super.onStop()
+    }
+
     private fun setReceiver() {
         imageReceiver = ImageReceiver()
         val intentFilter = IntentFilter().apply {

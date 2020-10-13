@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory
 import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_image.*
 import java.io.IOException
@@ -52,7 +53,13 @@ class ImageActivity : AppCompatActivity() {
 
         override fun onPostExecute(result: Bitmap?) {
             super.onPostExecute(result)
-            activity.image.setImageBitmap(result)
+            if (result == null) {
+                Toast.makeText(
+                    activity,
+                    activity.getString(R.string.error_connect),
+                    Toast.LENGTH_LONG
+                ).show()
+            } else activity.image.setImageBitmap(result)
         }
     }
 }
