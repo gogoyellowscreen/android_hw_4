@@ -7,6 +7,7 @@ import android.os.Parcelable
 import android.util.Log
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import org.json.JSONArray
+import org.json.JSONObject
 import java.net.HttpURLConnection
 import java.net.URL
 
@@ -23,7 +24,8 @@ class ImageIntentService(name: String = "") : IntentService(name) {
             val connection = URL(
                 "${getString(R.string.url_query)}${getString(R.string.cherepovets)}&${getString(R.string.client_id)}=${getString(R.string.id)}"
             ).openConnection() as HttpURLConnection
-            val images = JSONArray(connection.inputStream.reader().readText())
+            val images = JSONObject(connection.inputStream.reader().readText()).getJSONArray(getString(
+                            R.string.results))
             val result = ArrayList<Parcelable>()
             for (i in 0 until images.length()) {
                 val image = images.getJSONObject(i)

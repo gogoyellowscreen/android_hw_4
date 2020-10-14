@@ -4,7 +4,7 @@
     <string name="client_id">client_id</string>
     <string name="empty" />
     <string name="id">KzLEMThXnRRrrorXGnDYiOy8W0Hx3hj5YzEHWD9RApw</string>
-    <string name="url_query">https://api.unsplash.com/photos?query=</string>
+    <string name="url_query">https://api.unsplash.com/search/photos?query=</string>
     <string name="action">download</string>
     <string name="no_description">no description</string>
     <string name="defaultId">0</string>
@@ -23,4 +23,5 @@
     <string name="alt_description">alt_description</string>
     <string name="nul1">null</string>
     <string name="error_download_im">error man</string>
+    <string name="results">results</string>
 </resources>
